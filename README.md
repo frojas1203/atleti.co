@@ -1,6 +1,4 @@
-[index_updated_v3.html](https://github.com/user-attachments/files/25375120/index_updated_v3.html)
-[index_updated_v3.html](https://github.com/user-attachments/files/25375120/index_updated_v3.html)
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
