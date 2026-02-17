@@ -1,5 +1,3 @@
-# atleti.co
-atleti.co website from Claude
 <!DOCTYPE html>
 <html lang="en">
 <head>
