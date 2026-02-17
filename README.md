@@ -24,8 +24,7 @@
   html { scroll-behavior: smooth; }
   body {
     font-family: 'Barlow', sans-serif;
-    background: var(--navy);
-    color: var(--white);
+    background: #FFFFFF;    color: var(--white);
     overflow-x: hidden;
   }
 
@@ -148,9 +147,9 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: rgba(216,31,38,0.15);
-    border: 1px solid rgba(216,31,38,0.4);
-    border-radius: 100px;
+    background: var(--navy);
+        border: 1px solid var(--navy);
+            border-radius: 100px;
     padding: 6px 14px;
     font-size: 12px;
     font-weight: 600;
@@ -320,8 +319,10 @@
     font-size: 11px;
     letter-spacing: 0.16em;
     text-transform: uppercase;
-    color: var(--navy);
-    opacity: 0.45;
+      background: var(--navy);
+  color: var(--white);
+    opacity: 1;
+      padding: 6px 14px;
     margin-bottom: 20px;
   }
 
