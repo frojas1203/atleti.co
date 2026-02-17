@@ -457,8 +457,8 @@
   }
 
   .step {
-    background: var(--white);
-    padding: 36px 28px;
+    background: var(--navy);
+        padding: 36px 28px;
     position: relative;
     transition: background 0.2s;
     border-top: 4px solid transparent;
@@ -484,8 +484,7 @@
     text-transform: uppercase;
     letter-spacing: 0.04em;
     margin-bottom: 12px;
-    color: var(--navy);
-  }
+    color: var(--white);
 
   .step-desc { font-size: 14px; color: #5A6880; line-height: 1.6; }
 
@@ -498,8 +497,8 @@
   }
 
   .feature-card {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.07);
+    background: var(--navy);
+        border: 1px solid rgba(255,255,255,0.07);
     border-radius: 12px;
     padding: 32px;
     transition: all 0.3s;
