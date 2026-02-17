@@ -1,3 +1,5 @@
+[index_updated.html](https://github.com/user-attachments/files/25374925/index_updated.html)
+[index_updated.html](https://github.com/user-attachments/files/25374925/index_updated.html)
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,7 +46,9 @@
   }
 
   .nav-logo { cursor: pointer; }
-  .nav-logo img { height: 54px; transition: transform 0.2s; }
+  .nav-logo img { height: 66px; transition: transform 0.2s; }
+  .nav-logo { display:flex; align-items:center; }
+  .nav-logo img { filter: drop-shadow(0 6px 18px rgba(216,31,38,0.25)); }
   .nav-logo img:hover { transform: scale(1.03); }
 
   .nav-tabs {
@@ -350,21 +354,30 @@
     flex-shrink: 0;
   }
 
-  .school-helmet {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+    .school-logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
+    background: rgba(13,27,62,0.06);
+    border: 1px solid rgba(13,27,62,0.12);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 900;
-    font-size: 18px;
-    color: white;
-    letter-spacing: -0.02em;
-    margin-bottom: 6px;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+    margin-bottom: 8px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.10);
     flex-shrink: 0;
+  }
+
+  .school-logo-img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    filter: saturate(1.05) contrast(1.05);
+  }
+
+  @media (max-width: 900px) {
+    .school-logo { width: 56px; height: 56px; }
+    .school-logo-img { width: 42px; height: 42px; }
   }
 
   .school-name {
@@ -496,8 +509,9 @@
   }
 
   .feature-card {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.07);
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.14);
+    backdrop-filter: blur(14px);
     border-radius: 12px;
     padding: 32px;
     transition: all 0.3s;
@@ -529,6 +543,7 @@
   }
 
   .feature-title {
+    color: rgba(255,255,255,0.95);
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -551,7 +566,7 @@
     margin-bottom: 12px;
   }
 
-  .feature-desc { font-size: 14px; color: rgba(255,255,255,0.55); line-height: 1.65; }
+  .feature-desc { font-size: 14px; color: rgba(255,255,255,0.74); line-height: 1.65; }
 
   /* ─── PRICING ─── */
   .pricing-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-top: 60px; }
@@ -668,7 +683,7 @@
   /* ─── RESPONSIVE ─── */
   @media (max-width: 900px) {
     nav { padding: 0 20px; height: 68px; }
-    .nav-logo img { height: 42px; }
+    .nav-logo img { height: 52px; }
     .hero-logo-bar img { height: 72px; }
     .hero-content, .two-col { grid-template-columns: 1fr; }
     .hero-visual { display: none; }
@@ -771,47 +786,175 @@
     <div class="schools-scroll-wrap">
       <div class="schools-inner" id="schoolsInner">
         <!-- First set -->
-        <div class="school-item"><div class="school-helmet" style="background:#003087;">AL</div><div class="school-name">Alabama</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#CC0000;">GA</div><div class="school-name">Georgia</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#FF6600;">TX</div><div class="school-name">Texas</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#00274C;">MI</div><div class="school-name">Michigan</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#003366;">PSU</div><div class="school-name">Penn State</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#4B0082;">LSU</div><div class="school-name">LSU</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#154733;">ORE</div><div class="school-name">Oregon</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#CC0000;">UGA</div><div class="school-name">USC</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#003087;">FLA</div><div class="school-name">Florida</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#862334;">AU</div><div class="school-name">Auburn</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#BF5700;">UT</div><div class="school-name">Texas</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#C41230;">NC</div><div class="school-name">NC State</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#00205B;">ND</div><div class="school-name">Notre Dame</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#C5050C;">WI</div><div class="school-name">Wisconsin</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#003594;">UCLA</div><div class="school-name">UCLA</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#CC0033;">RU</div><div class="school-name">Rutgers</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#00B5AD;">MIA</div><div class="school-name">Miami</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#4D1979;">TCU</div><div class="school-name">TCU</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#CC0000;">UTA</div><div class="school-name">Utah</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#003087;">KU</div><div class="school-name">Kansas</div></div>
-        <!-- Duplicate set for seamless loop -->
-        <div class="school-item"><div class="school-helmet" style="background:#003087;">AL</div><div class="school-name">Alabama</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#CC0000;">GA</div><div class="school-name">Georgia</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#FF6600;">TX</div><div class="school-name">Texas</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#00274C;">MI</div><div class="school-name">Michigan</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#003366;">PSU</div><div class="school-name">Penn State</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#4B0082;">LSU</div><div class="school-name">LSU</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#154733;">ORE</div><div class="school-name">Oregon</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#CC0000;">UGA</div><div class="school-name">USC</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#003087;">FLA</div><div class="school-name">Florida</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#862334;">AU</div><div class="school-name">Auburn</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#BF5700;">UT</div><div class="school-name">Texas</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#C41230;">NC</div><div class="school-name">NC State</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#00205B;">ND</div><div class="school-name">Notre Dame</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#C5050C;">WI</div><div class="school-name">Wisconsin</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#003594;">UCLA</div><div class="school-name">UCLA</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#CC0033;">RU</div><div class="school-name">Rutgers</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#00B5AD;">MIA</div><div class="school-name">Miami</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#4D1979;">TCU</div><div class="school-name">TCU</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#CC0000;">UTA</div><div class="school-name">Utah</div></div>
-        <div class="school-item"><div class="school-helmet" style="background:#003087;">KU</div><div class="school-name">Kansas</div></div>
+        <div class="school-item">
+          <div class="school-logo">
+            <img class="school-logo-img" src="https://a.espncdn.com/i/teamlogos/ncaa/500/333.png" alt="Alabama logo" loading="lazy" decoding="async"
+                 onerror="this.closest('.school-item').style.display='none';" />
+          </div>
+          <div class="school-name">Alabama</div>
+        </div>
+        <div class="school-item">
+          <div class="school-logo">
+            <img class="school-logo-img" src="https://a.espncdn.com/i/teamlogos/ncaa/500/61.png" alt="Georgia logo" loading="lazy" decoding="async"
+                 onerror="this.closest('.school-item').style.display='none';" />
+          </div>
+          <div class="school-name">Georgia</div>
+        </div>
+        <div class="school-item">
+          <div class="school-logo">
+            <img class="school-logo-img" src="https://a.espncdn.com/i/teamlogos/ncaa/500/251.png" alt="Texas logo" loading="lazy" decoding="async"
+                 onerror="this.closest('.school-item').style.display='none';" />
+          </div>
+          <div class="school-name">Texas</div>
+        </div>
+        <div class="school-item">
+          <div class="school-logo">
+            <img class="school-logo-img" src="https://a.espncdn.com/i/teamlogos/ncaa/500/130.png" alt="Michigan logo" loading="lazy" decoding="async"
+                 onerror="this.closest('.school-item').style.display='none';" />
+          </div>
+          <div class="school-name">Michigan</div>
+        </div>
+        <div class="school-item">
+          <div class="school-logo">
+            <img class="school-logo-img" src="https://a.espncdn.com/i/teamlogos/ncaa/500/213.png" alt="Penn State logo" loading="lazy" decoding="async"
+                 onerror="this.closest('.school-item').style.display='none';" />
+          </div>
+          <div class="school-name">Penn State</div>
+        </div>
+        <div class="school-item">
+          <div class="school-logo">
+            <img class="school-logo-img" src="https://a.espncdn.com/i/teamlogos/ncaa/500/194.png" alt="Ohio State logo" loading="lazy" decoding="async"
+                 onerror="this.closest('.school-item').style.display='none';" />
+          </div>
+          <div class="school-name">Ohio State</div>
+        </div>
+        <div class="school-item">
+          <div class="school-logo">
+            <img class="school-logo-img" src="https://a.espncdn.com/i/teamlogos/ncaa/500/87.png" alt="Notre Dame logo" loading="lazy" decoding="async"
+                 onerror="this.closest('.school-item').style.display='none';" />
+          </div>
+          <div class="school-name">Notre Dame</div>
+        </div>
+        <div class="school-item">
+          <div class="school-logo">
+            <img class="school-logo-img" src="https://a.espncdn.com/i/teamlogos/ncaa/500/30.png" alt="USC logo" loading="lazy" decoding="async"
+                 onerror="this.closest('.school-item').style.display='none';" />
+          </div>
+          <div class="school-name">USC</div>
+        </div>
+        <div class="school-item">
+          <div class="school-logo">
+            <img class="school-logo-img" src="https://a.espncdn.com/i/teamlogos/ncaa/500/228.png" alt="Clemson logo" loading="lazy" decoding="async"
+                 onerror="this.closest('.school-item').style.display='none';" />
+          </div>
+          <div class="school-name">Clemson</div>
+        </div>
+        <div class="school-item">
+          <div class="school-logo">
+            <img class="school-logo-img" src="https://a.espncdn.com/i/teamlogos/ncaa/500/99.png" alt="LSU logo" loading="lazy" decoding="async"
+                 onerror="this.closest('.school-item').style.display='none';" />
+          </div>
+          <div class="school-name">LSU</div>
+        </div>
+        <div class="school-item">
+          <div class="school-logo">
+            <img class="school-logo-img" src="https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png" alt="Oregon logo" loading="lazy" decoding="async"
+                 onerror="this.closest('.school-item').style.display='none';" />
+          </div>
+          <div class="school-name">Oregon</div>
+        </div>
+        <div class="school-item">
+          <div class="school-logo">
+            <img class="school-logo-img" src="https://a.espncdn.com/i/teamlogos/ncaa/500/52.png" alt="Florida State logo" loading="lazy" decoding="async"
+                 onerror="this.closest('.school-item').style.display='none';" />
+          </div>
+          <div class="school-name">Florida State</div>
+        </div>
+        <!-- Second set (duplicate for seamless loop) -->
+        <div class="school-item">
+          <div class="school-logo">
+            <img class="school-logo-img" src="https://a.espncdn.com/i/teamlogos/ncaa/500/333.png" alt="Alabama logo" loading="lazy" decoding="async"
+                 onerror="this.closest('.school-item').style.display='none';" />
+          </div>
+          <div class="school-name">Alabama</div>
+        </div>
+        <div class="school-item">
+          <div class="school-logo">
+            <img class="school-logo-img" src="https://a.espncdn.com/i/teamlogos/ncaa/500/61.png" alt="Georgia logo" loading="lazy" decoding="async"
+                 onerror="this.closest('.school-item').style.display='none';" />
+          </div>
+          <div class="school-name">Georgia</div>
+        </div>
+        <div class="school-item">
+          <div class="school-logo">
+            <img class="school-logo-img" src="https://a.espncdn.com/i/teamlogos/ncaa/500/251.png" alt="Texas logo" loading="lazy" decoding="async"
+                 onerror="this.closest('.school-item').style.display='none';" />
+          </div>
+          <div class="school-name">Texas</div>
+        </div>
+        <div class="school-item">
+          <div class="school-logo">
+            <img class="school-logo-img" src="https://a.espncdn.com/i/teamlogos/ncaa/500/130.png" alt="Michigan logo" loading="lazy" decoding="async"
+                 onerror="this.closest('.school-item').style.display='none';" />
+          </div>
+          <div class="school-name">Michigan</div>
+        </div>
+        <div class="school-item">
+          <div class="school-logo">
+            <img class="school-logo-img" src="https://a.espncdn.com/i/teamlogos/ncaa/500/213.png" alt="Penn State logo" loading="lazy" decoding="async"
+                 onerror="this.closest('.school-item').style.display='none';" />
+          </div>
+          <div class="school-name">Penn State</div>
+        </div>
+        <div class="school-item">
+          <div class="school-logo">
+            <img class="school-logo-img" src="https://a.espncdn.com/i/teamlogos/ncaa/500/194.png" alt="Ohio State logo" loading="lazy" decoding="async"
+                 onerror="this.closest('.school-item').style.display='none';" />
+          </div>
+          <div class="school-name">Ohio State</div>
+        </div>
+        <div class="school-item">
+          <div class="school-logo">
+            <img class="school-logo-img" src="https://a.espncdn.com/i/teamlogos/ncaa/500/87.png" alt="Notre Dame logo" loading="lazy" decoding="async"
+                 onerror="this.closest('.school-item').style.display='none';" />
+          </div>
+          <div class="school-name">Notre Dame</div>
+        </div>
+        <div class="school-item">
+          <div class="school-logo">
+            <img class="school-logo-img" src="https://a.espncdn.com/i/teamlogos/ncaa/500/30.png" alt="USC logo" loading="lazy" decoding="async"
+                 onerror="this.closest('.school-item').style.display='none';" />
+          </div>
+          <div class="school-name">USC</div>
+        </div>
+        <div class="school-item">
+          <div class="school-logo">
+            <img class="school-logo-img" src="https://a.espncdn.com/i/teamlogos/ncaa/500/228.png" alt="Clemson logo" loading="lazy" decoding="async"
+                 onerror="this.closest('.school-item').style.display='none';" />
+          </div>
+          <div class="school-name">Clemson</div>
+        </div>
+        <div class="school-item">
+          <div class="school-logo">
+            <img class="school-logo-img" src="https://a.espncdn.com/i/teamlogos/ncaa/500/99.png" alt="LSU logo" loading="lazy" decoding="async"
+                 onerror="this.closest('.school-item').style.display='none';" />
+          </div>
+          <div class="school-name">LSU</div>
+        </div>
+        <div class="school-item">
+          <div class="school-logo">
+            <img class="school-logo-img" src="https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png" alt="Oregon logo" loading="lazy" decoding="async"
+                 onerror="this.closest('.school-item').style.display='none';" />
+          </div>
+          <div class="school-name">Oregon</div>
+        </div>
+        <div class="school-item">
+          <div class="school-logo">
+            <img class="school-logo-img" src="https://a.espncdn.com/i/teamlogos/ncaa/500/52.png" alt="Florida State logo" loading="lazy" decoding="async"
+                 onerror="this.closest('.school-item').style.display='none';" />
+          </div>
+          <div class="school-name">Florida State</div>
+        </div></div>
       </div>
     </div>
   </div>
@@ -862,7 +1005,7 @@
   <div class="section">
     <div class="section-tag">Platform Features</div>
     <h2 class="section-title">Built Different.<br>For Football Players.</h2>
-    <p class="section-sub">athleti.co combines LinkedIn's professional networking, Hinge's intelligent matching, and Hudl's film analysis — purpose-built for the transfer portal.</p>
+    <p class="section-sub">athleti.co gives players one place to showcase verified performance, share film, and get matched with programs that fit their position, level, and goals — built for the modern transfer process.</p>
     <div class="features-grid">
       <div class="feature-card">
         <div class="feature-icon">🎥</div>
@@ -1203,51 +1346,73 @@
 </div>
 
 <script>
+  // ── BROWSER HISTORY SUPPORT ──
+  // Map page IDs to URL hashes
   const PAGE_IDS = ['home','players','coaches','pricing','about','signup'];
 
-  const pageNavMap = {
-    home: 'Home',
-    players: 'For Players',
-    coaches: 'For Coaches',
-    pricing: 'Pricing',
-    about: 'About',
-    signup: 'Get Early Access'
-  };
-
-  function _applyPage(pageId) {
+  function showPage(pageId, linkEl) {
     PAGE_IDS.forEach(id => {
       document.getElementById('page-' + id).classList.remove('active');
     });
     document.getElementById('page-' + pageId).classList.add('active');
 
-    document.querySelectorAll('.nav-tabs a').forEach(a => {
-      a.classList.remove('active');
-      if (a.textContent.trim() === pageNavMap[pageId]) {
-        a.classList.add('active');
-      }
-    });
+    // Update nav active state
+    document.querySelectorAll('.nav-tabs a').forEach(a => a.classList.remove('active'));
+    if (linkEl) {
+      linkEl.classList.add('active');
+    } else {
+      // Find matching nav link and activate it
+      document.querySelectorAll('.nav-tabs a').forEach(a => {
+        if (a.getAttribute('onclick') && a.getAttribute('onclick').includes("'" + pageId + "'")) {
+          a.classList.add('active');
+        }
+      });
+    }
 
     window.scrollTo(0, 0);
+
+    // Push to browser history so back button works
+    const hash = '#' + pageId;
+    if (getPageFromHash() !== pageId) {
+      history.pushState({ page: pageId }, '', hash);
+    }
   }
 
-  function showPage(pageId, linkEl) {
-    history.pushState({ pageId: pageId }, '', '#' + pageId);
-    _applyPage(pageId);
-  }
-
-  // Browser back / forward
+  // Handle browser back/forward
   window.addEventListener('popstate', function(e) {
-    const pageId = (e.state && PAGE_IDS.includes(e.state.pageId)) ? e.state.pageId : 'home';
-    _applyPage(pageId);
+    const page = e.state ? e.state.page : getPageFromHash();
+    if (page && PAGE_IDS.includes(page)) {
+      // Show page WITHOUT pushing a new history entry
+      PAGE_IDS.forEach(id => {
+        document.getElementById('page-' + id).classList.remove('active');
+      });
+      document.getElementById('page-' + page).classList.add('active');
+      document.querySelectorAll('.nav-tabs a').forEach(a => a.classList.remove('active'));
+      document.querySelectorAll('.nav-tabs a').forEach(a => {
+        if (a.getAttribute('onclick') && a.getAttribute('onclick').includes("'" + page + "'")) {
+          a.classList.add('active');
+        }
+      });
+      window.scrollTo(0, 0);
+    }
   });
 
-  // On first load — honour hash in URL, seed history state
-  (function() {
+  function getPageFromHash() {
     const hash = window.location.hash.replace('#', '');
-    const startPage = PAGE_IDS.includes(hash) ? hash : 'home';
-    history.replaceState({ pageId: startPage }, '', '#' + startPage);
-    _applyPage(startPage);
-  })();
+    if (!hash) return 'home';
+    // Support legacy "#" home and "#home"
+    return PAGE_IDS.includes(hash) ? hash : 'home';
+  }
+
+  // On load, set initial history state so back works from first page
+  window.addEventListener('DOMContentLoaded', function() {
+    const startPage = getPageFromHash();
+    if (!window.location.hash) { window.location.hash = '#home'; }
+    history.replaceState({ page: startPage }, '', '#' + startPage);
+    if (startPage !== 'home') {
+      showPage(startPage, null);
+    }
+  });
 
   function switchSignup(type, btn) {
     document.querySelectorAll('.signup-tab').forEach(t => t.classList.remove('active'));
