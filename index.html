@@ -23,7 +23,8 @@
   html { scroll-behavior: smooth; }
   body {
     font-family: 'Barlow', sans-serif;
-    background: #FFFFFF;    color: var(--white);
+    background: #FFFFFF;
+    color: var(--navy);
     overflow-x: hidden;
   }
 
@@ -97,6 +98,7 @@
     align-items: center;
     overflow: hidden;
     background: var(--navy);
+    color: var(--white);
   }
 
   .hero-bg {
@@ -432,7 +434,7 @@
     margin-bottom: 20px;
   }
 
-  .section-sub { font-size: 17px; color: rgba(255,255,255,0.6); line-height: 1.65; max-width: 560px; }
+  .section-sub { font-size: 17px; color: rgba(13,27,62,0.72); line-height: 1.65; max-width: 560px; }
 
   /* ─── HOW IT WORKS — WHITE BOX ─── */
   .how-bg {
@@ -465,7 +467,10 @@
 
   .step:hover { background: #F8F9FC; border-top-color: var(--red); }
 
-  .step-num {
+  
+  .step:hover .step-title { color: var(--navy); }
+  .step:hover .step-desc { color: #5A6880; }
+.step-num {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 900;
     font-size: 64px;
@@ -484,8 +489,9 @@
     letter-spacing: 0.04em;
     margin-bottom: 12px;
     color: var(--white);
+  }
 
-  .step-desc { font-size: 14px; color: #5A6880; line-height: 1.6; }
+  .step-desc { font-size: 14px; color: rgba(255,255,255,0.75); line-height: 1.6; }
 
   /* ─── FEATURES ─── */
   .features-grid {
