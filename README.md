@@ -1,5 +1,5 @@
-[index_fixed.html](https://github.com/user-attachments/files/25380723/index_fixed.html)
-[Uploading index_fixed<!DOCTYPE html>
+[index_fixed_v2 (2).html](https://github.com/user-attachments/files/25380765/index_fixed_v2.2.html)
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -99,6 +99,7 @@
     align-items: center;
     overflow: hidden;
     background: var(--navy);
+    color: var(--white);
   }
 
   .hero-bg {
@@ -434,7 +435,7 @@
     margin-bottom: 20px;
   }
 
-  .section-sub { font-size: 17px; color: rgba(13,27,62,0.7); line-height: 1.65; max-width: 560px; }
+  .section-sub { font-size: 17px; color: rgba(13,27,62,0.72); line-height: 1.65; max-width: 560px; }
 
   /* ─── HOW IT WORKS — WHITE BOX ─── */
   .how-bg {
@@ -467,7 +468,10 @@
 
   .step:hover { background: #F8F9FC; border-top-color: var(--red); }
 
-  .step-num {
+  
+  .step:hover .step-title { color: var(--navy); }
+  .step:hover .step-desc { color: #5A6880; }
+.step-num {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 900;
     font-size: 64px;
@@ -488,7 +492,7 @@
     color: var(--white);
   }
 
-  .step-desc { font-size: 14px; color: #5A6880; line-height: 1.6; }
+  .step-desc { font-size: 14px; color: rgba(255,255,255,0.75); line-height: 1.6; }
 
   /* ─── FEATURES ─── */
   .features-grid {
@@ -667,23 +671,6 @@
   .form-select { width: 100%; padding: 12px 16px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 8px; color: white; font-size: 15px; font-family: 'Barlow', sans-serif; outline: none; cursor: pointer; }
   .form-select option { background: #0D1B3E; }
   .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-
-  
-  /* ─── CONTRAST FIXES ─── */
-  .hero { color: var(--white); }
-  .page { color: var(--navy); }
-
-  /* Dark cards/blocks should default to light text */
-  .step, .feature-card, .stat-box, nav, footer { color: var(--white); }
-  .feature-title { color: var(--white); }
-
-  /* Step text contrast */
-  .step-desc { color: rgba(255,255,255,0.75); }
-  .step:hover .step-title { color: var(--navy); }
-  .step:hover .step-desc { color: #5A6880; }
-
-  /* White background sections need dark body text */
-  .how-bg .section-sub { color: #5A6880; }
 
   /* ─── RESPONSIVE ─── */
   @media (max-width: 900px) {
@@ -1295,5 +1282,3 @@
 </script>
 </body>
 </html>
-.html…]()
-[index_fixed.html](https://github.com/user-attachments/files/25380723/index_fixed.html)
