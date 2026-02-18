@@ -688,6 +688,70 @@
     .nav-tabs { display: none; }
     .page { padding-top: 68px; }
   }
+
+
+/* =========================
+   QA PATCH: Contrast fixes
+   ========================= */
+
+/* Ensure text inside dark/navy cards is readable */
+.feature-card, .feature-box, .platform-card, .step-card, .pricing-card, .plan-card, .card-dark {
+  color: var(--white) !important;
+}
+
+/* Titles inside those cards */
+.feature-card h3, .feature-card h4,
+.feature-box h3, .feature-box h4,
+.platform-card h3, .platform-card h4,
+.step-card h3, .step-card h4,
+.pricing-card h3, .pricing-card h4,
+.plan-card h3, .plan-card h4,
+.card-dark h3, .card-dark h4 {
+  color: var(--white) !important;
+}
+
+/* Supporting text inside those cards should be slightly softer */
+.feature-card p, .feature-box p, .platform-card p, .step-card p,
+.pricing-card p, .plan-card p, .card-dark p {
+  color: rgba(255,255,255,0.82) !important;
+}
+
+/* Any small labels/badges on dark cards */
+.feature-card .pill, .feature-box .pill, .platform-card .pill,
+.step-card .pill, .pricing-card .pill, .plan-card .pill {
+  color: var(--white) !important;
+}
+
+/* =========================
+   QA PATCH: Header logo size
+   ========================= */
+
+nav {
+  height: 96px !important;          /* a bit taller */
+  padding: 0 56px !important;       /* more breathing room */
+}
+
+.nav-logo img {
+  height: 96px !important;          /* bigger logo */
+  width: auto !important;
+  display: block;
+}
+
+/* If you use a text logo too */
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Ensure page content doesn't hide under the taller nav */
+.page {
+  padding-top: 96px !important;
+}
+
+.hero {
+  min-height: calc(100vh - 96px) !important;
+}
+
 </style>
 </head>
 <body>
