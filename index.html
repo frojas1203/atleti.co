@@ -752,6 +752,40 @@ nav {
   min-height: calc(100vh - 96px) !important;
 }
 
+
+
+/* =========================
+   FORCE HEADER LOGO SIZE (FINAL)
+   ========================= */
+
+nav {
+  height: 140px !important;
+  padding: 0 72px !important;
+  overflow: visible !important;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo img {
+  height: 140px !important;
+  max-height: none !important;
+  min-height: 140px !important;
+  width: auto !important;
+  object-fit: contain;
+}
+
+/* Push page content below taller nav */
+.page {
+  padding-top: 140px !important;
+}
+
+.hero {
+  min-height: calc(100vh - 140px) !important;
+}
+
 </style>
 </head>
 <body>
